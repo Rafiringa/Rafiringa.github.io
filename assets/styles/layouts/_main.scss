@@ -1,0 +1,252 @@
+#main1 {
+    padding: 30px 100px;
+
+    .section1 {
+        @include section;
+        div {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            margin: 20px 0 0;
+
+            @media screen and (max-width: 950px) {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: column;
+
+                i {
+                    height: 140px;
+                    width: 140px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 50px auto;
+                    background: rgb(252, 252, 252);
+                    border-radius: 150px;
+                    transition: 0.5s ease;
+
+                    &::before {
+                        font-size: 2.5rem;
+                        color: $grey1;
+                        transition: 0.3s ease;
+                    }
+
+                    &:hover {
+                        background: $color1;
+                        &::before {
+                            color: white;
+                        }
+                    }
+                }
+                p {
+                    color: grey;
+
+                    @media screen and (max-width: 1100px) {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        // div:nth-child(2) {
+        //     i {
+        //         background: $color1;
+        //         &::before {
+        //             color: white;
+        //         }
+        //     }
+        // }
+    }
+
+    .btn-section {
+        background: $color1;
+        border: transparent;
+        color: white;
+        margin: 70px 0;
+    }
+    .section2,
+    .section3 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 50px 0;
+
+        @media screen and (max-width: 770px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .contenu-section {
+        text-align: left;
+
+        h2 {
+            @include title;
+            margin: 50px 0;
+        }
+    }
+}
+
+.separateur {
+    background: url(../images/Photo1.jpg) center/cover;
+    height: 450px;
+    
+    .contenu-separateur {
+        padding: 30px 100px;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        color: $white1;
+        height: 100%;
+
+        .header-text {
+            img {
+                margin-bottom: 30px;
+                width: 70px;
+            }
+            h2 {
+                font-family: $font1;
+                font-weight: 300;
+                margin-bottom: 30px;
+                span {
+                    color: $color1;
+                }
+            }
+            p {
+                color: grey;
+                margin-bottom: 30px;
+            }
+            i {
+                margin: 50px 0 0;
+            }
+        }
+    }
+}
+
+#main2 {
+    padding: 30px 100px;
+    .section4 {
+        @include section;
+    }
+    .section5 {
+        margin: 70px 0;
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-template-rows: 200px 200px;
+        gap: 20px;
+
+        @media screen and (max-width: 770px) {
+            grid-template-columns: 1fr;
+
+            grid-template-rows: repeat(4, 200px);
+        }
+
+        .grille {
+            display: grid;
+            grid-template-columns: 30% 70%;
+
+            
+
+            .icone {
+                padding-top: 30px;
+                font-size: 1.8rem;
+                color: $color1;
+            }
+            .text {
+                text-align: left;
+                h1 {
+                    @include title;
+                    padding: 20px 0;
+
+                    @media screen and (max-width: 770px) {
+                        font-size: 1.6rem;
+                    }
+                }
+                p {
+                    font-size: 0.8rem;
+
+                    @media screen and (max-width: 770px) {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+    .section6 {
+        margin: 70px 0;
+        @include section;
+    }
+}
+#profil {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 20%) ;
+    grid-template-rows: 250px 250px;
+
+    @media screen and (max-width: 770px) {
+        display: none;
+    }
+    div {
+        transition: 0.5s ease;
+    }
+    div:hover {
+        background: $color1;
+    }
+
+    .img {
+        background: rgb(252, 240, 242);
+    }  
+}
+
+#main3 {
+    padding: 0 100px;
+    .section7 {
+        margin: 60px auto;
+        @include section;
+
+        #price {
+            margin: 50px 0;
+            display: grid;
+            grid-template-columns: repeat(4, 24%);
+            gap: 15px;
+
+            @media screen and (max-width: 970px) {
+                grid-template-columns: 1fr;
+            }
+
+            .card-price {
+                text-align: left;
+                .price {
+                    padding: 15px 20px 60px;
+                    display: flex;
+                    justify-content: start;
+                    span {
+                        font-size: 2.5rem;
+                        color: $color1;
+                    }
+                }
+                p {
+                    font-size: 0,8rem;
+                    padding: 40px 20px;
+                }
+
+                a {
+                    padding: 15px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    width: 100%;
+                    background: $color1;
+                    border-radius: 2px;
+                    color: white;
+
+                    span {
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-size: 0.8rem;
+                        font-family: $font3;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

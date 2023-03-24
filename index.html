@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alecto</title>
+    <title>ALECTO</title>
 
     <link
       rel="stylesheet"
@@ -13,7 +13,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
@@ -26,9 +25,9 @@
         <div>
           <ul>
             <li>home</li>
-            <li>about</li>
-            <li>work</li>
-            <li>services</li>
+            <li> <a href="#main1">about</a> </li>
+            <li> work </li>
+            <li> <a href="#main2">services</a> </li>
             <li>blog</li>
             <li><i class="fas fa-search"></i></li>
           </ul>
@@ -36,7 +35,7 @@
       </nav>
 
       <div class="header-content">
-        <div>
+        <div class="chevron">
           <i class="fas fa-angle-left"></i>
         </div>
         <div class="header-text">
@@ -44,76 +43,220 @@
           <h6>Nam varius accumsan elementum aliquam</h6>
           <button>Learn more</button>
           <i class="fas fa-ellipsis-h"></i>
-          <a href="#main"
+          <a href="#main1"
             ><span> <i class="fas fa-angle-down"></i> </span
           ></a>
         </div>
-        <div>
+        <div class="chevron">
           <i class="fas fa-angle-right"></i>
         </div>
       </div>
     </header>
 
-    <main>
-      <section class="section1">
-        <h2>About us</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
-          temporibus.
-        </p>
-        <div>
-          <div class="card">
-            <i class="fas fa-rocket"></i>
-            <h4>Lorem ipsum</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Excepturi, vero!
-            </p>
+    <main id="main1">
+        <section class="section1">
+          <h1>About us</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+            temporibus.
+          </p>
+          <div>
+            <div class="card">
+              <i class="fas fa-rocket"></i>
+              <h2>Lorem ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi, vero!
+              </p>
+            </div>
+            <div class="card">
+              <i class="fas fa-atom"></i>
+              <h2>Lorem ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi, vero!
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-wave-square"></i>
+              <h2>Lorem ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi, vero!
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h2>Lorem ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Excepturi, vero!
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <i class="fas fa-atom"></i>
-            <h4>Lorem ipsum</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Excepturi, vero!
-            </p>
+          <button class="btn-section">Learn more</button>
+        </section>
+        <section class="section2">
+          <div></div>
+          <div>
+            <div class="contenu-section">
+              <h2>Lorem ipsum</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                beatae repellat. Eius laudantium vel saepe, beatae voluptate
+                corporis, molestiae amet iste, consequuntur explicabo obcaecati
+                perspiciatis quam magni molestias! Repudiandae, adipisci!
+              </p>
+              <button class="btn-section">Learn more</button>
+            </div>
           </div>
-          <div class="card">
-            <i class="fa-solid fa-wave-square"></i>
-            <h4>Lorem ipsum</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Excepturi, vero!
-            </p>
-          </div>
-          <div class="card">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <h4>Lorem ipsum</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Excepturi, vero!
-            </p>
-          </div>
+        </section>
+        <section class="section3">
+          <div>
+            <div class="contenu-section">
+              <h2>Dolor sit amet</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                beatae repellat. Eius laudantium vel saepe, beatae voluptate
+                corporis, molestiae amet iste, consequuntur explicabo obcaecati
+                perspiciatis quam magni molestias! Repudiandae, adipisci!
+              </p>
+              <button class="btn-section">Learn more</button>
+            </div>
+            <div></div>
+        </section>
+      </main>
+      <div class="separateur">
+        <div class="contenu-separateur">
+            <div class="chevron">
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <div class="header-text">
+                <img src="./assets/images/Photo Adam Czajkowski.png" alt="Photo Adam Czajkowski">
+                <h2><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                <p><span>Adam Czajkowski</span> CEO&Founder at symu.co</p>
+        
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div class="chevron">
+                <i class="fas fa-angle-right"></i>
+              </div>
         </div>
-        <button class="btn-section">Learn more</button>
-      </section>
-      <section class="section2">
+      </div>
+      <main id="main2">
+        <section class="section4">
+          <h1>Our Services</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, placeat.</p>
+        </section>
+  
+        <section class="section5">
+          
+            <div class="grille"><div class="icone">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="text">
+                <h1>Portfolio</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quae laborum ex, nemo modi dolorum.
+                </p>
+              </div></div>
+        
+            <div class="grille"><div class="icone">
+                <i class="fa-solid fa-pencil"></i>
+              </div>
+              <div class="text">
+                <h1>Design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quae laborum ex, nemo modi dolorum.
+                </p>
+              </div></div>
+
+            <div class="grille"><div class="icone">
+                <i class="fas fa-clone"></i>
+              </div>
+              <div class="text">
+                <h1>Branding</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quae laborum ex, nemo modi dolorum.
+                </p>
+              </div></div>
+
+            <div class="grille"><div class="icone">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="text">
+                <h1>Development</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quae laborum ex, nemo modi dolorum.
+                </p>
+              </div></div>
+          
+        </section>
+  
+        <section class="section6">
+          <h1>Meet our team</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, placeat.</p>
+        </section>
+      </main>
+      <div id="profil">
         <div></div>
-        <div>
-          <div class="contenu-section">
-            <h2>Lorem ipsum</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-              beatae repellat. Eius laudantium vel saepe, beatae voluptate
-              corporis, molestiae amet iste, consequuntur explicabo obcaecati
-              perspiciatis quam magni molestias! Repudiandae, adipisci!
-            </p>
-            <button class="btn-section">Learn more</button>
+        <div class="img"></div>
+        <div></div>
+        <div class="img"></div>
+        <div></div>
+        <div class="img"></div>
+        <div></div>
+        <div class="img"></div>
+        <div></div>
+        <div class="img"></div>
+      </div>
+      <main id="main3">
+        <section class="section7">
+          <h1>Pricing</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, placeat.</p>
+  
+          <div id="price">
+            <div class="card-price">
+              <div class="price">
+                <span>$29</span>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat veniam vero blanditiis accusamus itaque. Natus?</p>
+              <a href="#">
+                <span>purchase</span>
+                <i class="fas fa-cart-plus"></i>
+              </a>
+            </div> 
+            <div class="card-price">
+              <div class="price">
+                <span>$39</span>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat veniam vero blanditiis accusamus itaque. Natus?</p>
+              <a href="#">
+                <span>purchase</span>
+                <i class="fas fa-cart-plus"></i>
+              </a>
+            </div> 
+            <div class="card-price">
+              <div class="price">
+                <span>$49</span>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat veniam vero blanditiis accusamus itaque. Natus?</p>
+              <a href="#">
+                <span>purchase</span>
+                <i class="fas fa-cart-plus"></i>
+              </a>
+            </div> 
+            <div class="card-price">
+              <div class="price">
+                <span>$109</span>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat veniam vero blanditiis accusamus itaque. Natus?</p>
+              <a href="#">
+                <span>purchase</span>
+                <i class="fas fa-cart-plus"></i>
+              </a>
+            </div>         
           </div>
-        </div>
-      </section>
-      <section class="section3">
-        <div>
+        </section>
+      </main>
+      <footer>
+        <section class="section8">
           <div class="contenu-section">
             <h2>Dolor sit amet</h2>
             <p>
@@ -125,154 +268,15 @@
             <button class="btn-section">Learn more</button>
           </div>
           <div></div>
-      </section>
-    </main>
-    <div class="separateur">
-      <div>
-        <i class="fas fa-angle-left"></i>
-      </div>
-      <div class="header-text">
-        <img src="./assets/images/Photo Adam Czajkowski.png" alt="Photo Adam Czajkowski">
-        <h4><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-        <p><span>Adam Czajkowski</span> CEO&Founder at symu.co</p>
-
-        <i class="fas fa-ellipsis-h"></i>
-      </div>
-      <div>
-        <i class="fas fa-angle-right"></i>
-      </div>
-    </div>
-    <main>
-      <section class="section4">
-        <h2>Our Services</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, placeat.</p>
-      </section>
-
-      <section class="section5">
-        <div>
-          <div class="icone">
-            <i class="fa-solid fa-briefcase"></i>
-          </div>
-          <div class="text">
-            <h2>Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut tempora blanditiis repudiandae repellendus expedita asperiores nulla aperiam explicabo vero?
-            </p>
-          </div>
-          <div class="icone">
-            <i class="fa-solid fa-pencil"></i>
-          </div>
-          <div class="text">
-            <h2>Design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut tempora blanditiis repudiandae repellendus expedita asperiores nulla aperiam explicabo vero?
-            </p>
-          </div>
-          <div class="icone">
-            <i class="fas fa-clone"></i>
-          </div>
-          <div class="text">
-            <h2>Branding</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut tempora blanditiis repudiandae repellendus expedita asperiores nulla aperiam explicabo vero?
-            </p>
-          </div>
-          <div class="icone">
-            <i class="fa-solid fa-rocket"></i>
-          </div>
-          <div class="text">
-            <h2>Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut tempora blanditiis repudiandae repellendus expedita asperiores nulla aperiam explicabo vero?
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section4">
-        <h2>Meet out team</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, placeat.</p>
-      </section>
-    </main>
-    <div id="profil">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <main>
-      <section class="section4">
-        <h2>Pricing</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, placeat.</p>
-
-        <div>
-          <div class="card-price">
-            <div class="price">
-              <span>$29</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius provident ab suscipit nihil enim laborum impedit, numquam voluptas magnam facere labore iusto, autem dolores!</p>
-            <a href="#">
-              <span>purchase</span>
-              <i class="fas fa-cart-plus"></i>
-            </a>
-          </div> 
-          <div class="card-price">
-            <div class="price">
-              <span>$39</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius provident ab suscipit nihil enim laborum impedit, numquam voluptas magnam facere labore iusto, autem dolores!</p>
-            <a href="#">
-              <span>purchase</span>
-              <i class="fas fa-cart-plus"></i>
-            </a>
-          </div> 
-          <div class="card-price">
-            <div class="price">
-              <span>$49</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius provident ab suscipit nihil enim laborum impedit, numquam voluptas magnam facere labore iusto, autem dolores!</p>
-            <a href="#">
-              <span>purchase</span>
-              <i class="fas fa-cart-plus"></i>
-            </a>
-          </div> 
-          <div class="card-price">
-            <div class="price">
-              <span>$109</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius provident ab suscipit nihil enim laborum impedit, numquam voluptas magnam facere labore iusto, autem dolores!</p>
-            <a href="#">
-              <span>purchase</span>
-              <i class="fas fa-cart-plus"></i>
-            </a>
-          </div>         
-        </div>
-      </section>
-    </main>
-    <footer>
-      <section class="section5">
-        <div class="contenu-section">
-          <h2>Dolor sit amet</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-            beatae repellat. Eius laudantium vel saepe, beatae voluptate
-            corporis, molestiae amet iste, consequuntur explicabo obcaecati
-            perspiciatis quam magni molestias! Repudiandae, adipisci!
-          </p>
+        </section>
+        <div class="separateur-fin">
+          <h2>Try our <span>PRODUCT</span> on symu.co</h2>
           <button class="btn-section">Learn more</button>
         </div>
-        <div></div>
-      </section>
-      <div class="separateur-fin">
-        <h2>Try our <span>PRODUCT</span> on symu.co</h2>
-        <button class="btn-section">Learn more</button>
-      </div>
-      <div class="fin">
-        <i class="fas fa-copyright"></i>
-        <p>All rights reserved</p>
-      </div>
-    </footer>
+        <div class="fin">
+          <i class="fas fa-copyright"></i>
+          <p>All rights reserved</p>
+        </div>
+      </footer>
   </body>
 </html>
