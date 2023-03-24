@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "raleway";
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "proximanova";
+  src: url(../fonts/Fontspring-DEMO-proximanova-regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: rgb(231, 230, 230);
+}
+
+body {
+  text-align: center;
+  font-family: raleway, sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(19, 19, 19);
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+button {
+  background: none;
+  border: 2px solid rgb(231, 230, 230);
+  color: rgb(231, 230, 230);
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-family: proximanova, sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+header {
+  background: url(../../images/BACKGROUD.jpg) fixed center/cover;
+  color: rgb(231, 230, 230);
+  min-height: 100vh;
+}/*# sourceMappingURL=index.css.map */
