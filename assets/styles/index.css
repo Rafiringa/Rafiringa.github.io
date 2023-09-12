@@ -85,7 +85,7 @@ button:hover {
 header {
   min-height: 100vh;
   color: rgb(231, 230, 230);
-  background: url(../images/BACKGROUD.jpg) center/cover no-repeat;
+  background: url(../images/BACKGROUD.jpg) center/cover no-repeat fixed;
 }
 header #navbar {
   display: flex;
@@ -285,6 +285,22 @@ header .header-content .header-text a i:hover {
   #main1 .section3 {
     grid-template-columns: 1fr;
   }
+}
+#main1 .section2 img,
+#main1 .section3 img {
+  max-width: 500px;
+}
+#main1 .section2 #imgImprovise1,
+#main1 .section3 #imgImprovise1 {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1.5s ease;
+}
+#main1 .section2 #imgImprovise2,
+#main1 .section3 #imgImprovise2 {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 1.5s ease;
 }
 #main1 .contenu-section {
   text-align: left;

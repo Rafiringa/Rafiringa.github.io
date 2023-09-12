@@ -74,6 +74,22 @@
         @media screen and (max-width: 770px) {
             grid-template-columns: 1fr;
         }
+
+        img {
+            max-width: 500px;
+            
+        }
+
+        #imgImprovise1 {
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: 1.5s ease;
+        }
+        #imgImprovise2 {
+            transform: translateX(100%);
+            opacity: 0;
+            transition: 1.5s ease;
+        }
     }
     .contenu-section {
         text-align: left;
