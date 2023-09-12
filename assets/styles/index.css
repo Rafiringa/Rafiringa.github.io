@@ -85,66 +85,75 @@ button:hover {
 header {
   min-height: 100vh;
   color: rgb(231, 230, 230);
-  padding: 30px 100px;
   background: url(../images/BACKGROUD.jpg) center/cover no-repeat;
 }
-header nav {
+header #navbar {
   display: flex;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: space-around;
+  width: 100%;
   align-items: center;
-  margin: 0 auto;
   z-index: 100;
+  top: 0;
+  position: fixed;
+  transition: 0.5s;
 }
-header nav h3 {
+header #navbar h3 {
   font-weight: 400;
   font-family: montserrat, serif;
   font-size: 1.6rem;
   letter-spacing: 1px;
   cursor: pointer;
 }
-header nav h3 span {
+header #navbar h3 span {
   font-size: 2rem;
   color: rgb(10, 221, 168);
 }
 @media screen and (max-width: 950px) {
-  header nav h3 {
+  header #navbar h3 {
     font-size: 1rem;
   }
 }
-header nav ul {
+header #navbar ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 @media screen and (max-width: 950px) {
-  header nav ul {
+  header #navbar ul {
     justify-content: space-around;
   }
 }
 @media screen and (max-width: 770px) {
-  header nav ul {
+  header #navbar ul {
     display: none;
   }
 }
-header nav ul li {
+header #navbar ul li {
   display: flex;
   align-items: center;
-  cursor: pointer;
   padding: 0 0 0 50px;
   text-transform: uppercase;
   font-family: proximanova, sans-serif;
   font-weight: 800;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 950px) {
-  header nav ul li {
+  header #navbar ul li {
     font-size: 0.6rem;
   }
 }
+header #navbar ul li a {
+  transition: 0.5s;
+}
+header #navbar ul li a:hover {
+  color: rgb(10, 221, 168);
+  transform: scale(1.5);
+}
 header .header-content {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 650px;
   opacity: 0;
   transform: translateY(40px);
@@ -162,7 +171,7 @@ header .header-content .header-text {
 header .header-content .header-text h1 {
   font-size: 2.5rem;
   font-weight: 100;
-  margin: 120px 0 20px;
+  margin: 10px 0 20px;
 }
 header .header-content .header-text h1 span {
   font-weight: 600;
@@ -178,7 +187,7 @@ header .header-content .header-text button {
 }
 header .header-content .header-text a {
   position: absolute;
-  bottom: 20px;
+  bottom: -50px;
 }
 header .header-content .header-text a i {
   font-size: 2.5rem;

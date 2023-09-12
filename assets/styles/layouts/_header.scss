@@ -1,17 +1,20 @@
 header {
     min-height: 100vh;
     color: $white1;
-    padding: 30px 100px;
+    // padding: 30px 100px;
     background: url(../images/BACKGROUD.jpg) center/cover no-repeat;
+    
 
-    nav {
+    #navbar {
         display: flex;
-        justify-content: space-between;
-        width: 90%;
+        justify-content: space-around;
+        width: 100%;
         align-items: center;
-        margin: 0 auto;
+        // margin: 0 auto;
         z-index: 100;
-
+        top: 0;
+        position: fixed;
+        transition: 0.5s;
         
 
         h3 {
@@ -43,26 +46,38 @@ header {
                 display: none;
             }
 
+            
+
             li {
                 display: flex;
                 align-items: center;
-                cursor: pointer;
                 padding: 0 0 0 50px;
                 text-transform: uppercase;
                 font-family: $font3;
                 font-weight: 800;
                 font-size: 0.8rem;
+                cursor: pointer;
+                
 
                 @media screen and (max-width: 950px) {
                     font-size: 0.6rem;
                 }
+                a {   
+                    transition: 0.5s ;
+                }
+                a:hover {
+                    color: $color1;
+                    transform: scale(1.5);
+                }
+                
             }
         }
     }
 
     .header-content {
-        display: grid;
-        grid-template-columns: 10% 80% 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 650px;
         opacity: 0;
         transform: translateY(40px);
@@ -82,7 +97,7 @@ header {
             h1 {
                 font-size: 2.5rem;
                 font-weight: 100;
-                margin: 120px 0 20px;
+                margin: 10px 0 20px;
                 span {
                     font-weight: 600;
                 }
@@ -98,7 +113,8 @@ header {
             }
             a {
                 position: absolute;
-                bottom: 20px;
+                bottom: -50px;
+                
 
                 i {
                     font-size: 2.5rem;
