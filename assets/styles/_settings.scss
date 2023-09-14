@@ -64,24 +64,34 @@ html {
 p {
     line-height: 35px;
 }
-a, 
-a:visited {
-    color: $white1;
-    text-decoration: none;
-    max-width: 1300px;
-    margin: 0 auto;
 
-    
+img {
+    width: 90%;
 }
+a {
+    transition: 0.5s ;
+    text-decoration: none;
+    &:visited {
+        color: $white1;
+        
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    &:hover {
+        color: $color1;
+        transform: scale(1.5);
+    }
+} 
+
 li {
     list-style: none;
 }
 body {
-    // min-height: 100vh;
+    min-height: 100vh;
     text-align: center;
     font-family: $font1;
+    overflow-x: hidden;
     
-
     .chevron {
         display: flex;
         align-items: center;

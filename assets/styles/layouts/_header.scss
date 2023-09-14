@@ -3,7 +3,40 @@ header {
     color: $white1;
     // padding: 30px 100px;
     background: url(../images/BACKGROUD.jpg) center/cover no-repeat fixed;
+    // position: relative;
     
+    #sideBar {
+        position: fixed;
+        height: 100vh;
+        z-index: 200;
+        background: $black1;
+        top: 0;
+        right: 0;
+        width: 250px;
+        transform: translateX(300px);
+        transition: 1.5s ease;
+        
+        .fa-xmark {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        ul {
+            padding: 90px 0 0 50px;
+            text-align: left;
+
+            li {
+                padding: 20px 0 20px 0;
+                text-transform: uppercase;
+                font-family: $font3;
+                font-weight: 800;
+                font-size: 0.8rem;
+                border-bottom: 1px solid ;
+            }
+        }
+    }
 
     #navbar {
         display: flex;
@@ -15,6 +48,19 @@ header {
         top: 0;
         position: fixed;
         transition: 0.5s;
+
+        .fa-bars {
+            font-size: 1.4rem;
+            display: none;
+            position: absolute;
+            right: 50px;
+            cursor: pointer;
+
+            @media screen and (max-width: 770px) {
+                display: flex;
+                
+            }
+        }
         
 
         h3 {
@@ -28,9 +74,9 @@ header {
                 color: $color1;
             }
 
-            @media screen and (max-width: 950px) {
-                font-size: 1rem;
-            }
+            // @media screen and (max-width: 950px) {
+            //     font-size: 1rem;
+            // }
         }
 
         ul {
@@ -62,13 +108,7 @@ header {
                 @media screen and (max-width: 950px) {
                     font-size: 0.6rem;
                 }
-                a {   
-                    transition: 0.5s ;
-                }
-                a:hover {
-                    color: $color1;
-                    transform: scale(1.5);
-                }
+                
                 
             }
         }
