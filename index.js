@@ -1,6 +1,15 @@
 let lastScroll = 0;
 let playOnce = true;
 
+// SideBar
+iconBurger.addEventListener("click", () => {
+  sideBar.style.transform = "none";
+});
+
+closeNavbar.addEventListener("click", () => {
+  sideBar.style.transform = "translateX(300px)";
+});
+
 window.addEventListener("scroll", () => {
   // Navbar apparence
   if (window.scrollY == 0) {
@@ -40,16 +49,17 @@ window.addEventListener("scroll", () => {
   }
 });
 
+closeBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  popup.style.opacity = 0;
+  popup.style.transform = "translateX(400px)";
+});
+
+// SideBar
 iconBurger.addEventListener("click", () => {
   sideBar.style.transform = "none";
 });
 
 closeNavbar.addEventListener("click", () => {
   sideBar.style.transform = "translateX(300px)";
-});
-
-closeBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  popup.style.opacity = 0;
-  popup.style.transform = "translateX(400px)";
 });
